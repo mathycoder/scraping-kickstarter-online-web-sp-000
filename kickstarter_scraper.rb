@@ -17,7 +17,6 @@ def create_project_hash
       :location => project.css("span.location-name").text,
       :percent_funded => project.css("li.first.funded").text.gsub("%", "").to_i
     }
-
   end 
 
   
